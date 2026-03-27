@@ -1,0 +1,7 @@
+dual_arm_teleop:
+  ros__parameters:
+    camera_index: 0          # /dev/videoX index
+    linear_scale: 0.4        # m/s per normalised delta
+    angular_scale: 1.2       # rad/s per radian of hand tilt
+    publish_rate_hz: 30.0
+    show_camera: true        # display annotated camera window

@@ -1,0 +1,32 @@
+left_servo_node:
+  ros__parameters:
+    moveit_servo:
+      use_gazebo: false
+      status_topic: ~/status
+      command_in_type: "speed_units"
+      scale:
+        linear: 0.4
+        rotational: 0.8
+        joint: 0.5
+      planning_group_name: "left_panda_arm"
+      command_out_type: "trajectory_msgs/JointTrajectory"
+      command_out_topic: "/left_arm_controller/joint_trajectory"
+      publish_period: 0.034
+      cartesian_command_in_topic: "~/delta_twist_cmds"
+      joint_command_in_topic: "~/delta_joint_cmds"
+      robot_link_command_frame: "world"
+      ee_frame_name: "left_panda_link8"
+      joint_topic: "/joint_states"
+      check_collisions: true
+      lower_singularity_threshold: 17.0
+      hard_stop_singularity_threshold: 30.0
+      incoming_command_timeout: 0.1
+      num_outgoing_halt_msgs_to_publish: 4
+      joint_limit_margins: [0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1]
+      publish_joint_positions: true
+      publish_joint_velocities: true
+      publish_joint_accelerations: false
+      low_latency_mode: false
+      is_primary_planning_scene_monitor: false
+      monitored_planning_scene_topic: "/monitored_planning_scene"
+      smoothing_filter_plugin_name: "online_signal_smoothing::ButterworthFilterPlugin"
