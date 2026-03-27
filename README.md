@@ -3,22 +3,6 @@
 A ROS 2 Humble workspace for real-time teleoperation of dual Franka Panda arms using camera-based hand tracking. The operator controls both end-effectors and grippers using hand gestures captured from a standard RGB camera.
 
 ---
-## Demo
-
-
-
-## Overview
-
-| Feature | Details |
-|---|---|
-| Robot | Dual 7-DOF Franka Panda arms with 2-finger grippers |
-| Visualization | RViz2 with MoveIt 2 motion planning |
-| Tracking | MediaPipe Hands (21 landmarks per hand) |
-| Control | 2D end-effector translation + 1D wrist rotation + gripper open/close |
-| IK Solver | KDL via MoveIt 2 `/compute_ik` service |
-| Noise handling | Exponential Moving Average (EMA) smoothing, dead-band filtering |
-
----
 
 ## Repository Structure
 
