@@ -1,4 +1,0 @@
-[submodule "src/moveit_resources"]
-	path = src/moveit_resources
-	url = https://github.com/moveit/moveit_resources.git
-	branch = ros2
